@@ -1,24 +1,25 @@
 export interface Student {
-	firstName: string;
-	lastName: string;
-	age: number;
-	location: string;
+  firstName: string;
+  lastName: string;
+  age: number;
+  location: string;
 }
 const studentA: Student = {
-	firstName: "John",
-	lastName: "Smith",
-	age: 22,
-	location: "Liverpool, UK",
+  firstName: "John",
+  lastName: "Yoon",
+  age: 22,
+  location: "Seoul, South Korea",
 };
 const studentB: Student = {
-	firstName: "Jane",
-	lastName: "Doe",
-	age: 21,
-	location: "Lodz, Poland",
+  firstName: "Jane",
+  lastName: "Smith",
+  age: 22,
+  location: "Lodz, Poland",
 };
+
 const studentsList: Array<Student> = [
-	studentA,
-	studentB,
+  studentA,
+  studentB,
 ];
 const styleSheet = `
   html {
@@ -37,7 +38,7 @@ const styleSheet = `
     border-collapse: collapse;
   }
   thead {
-	  font-weight: bold;
+    font-weight: bold;
   }
   td {
     padding: 10px;
@@ -52,6 +53,7 @@ const styleSheet = `
     text-align: center;
   }
 `;
+
 export const displayStudents = (students: Array<Student>): void => {
   const table = document.createElement('table');
   const tableHead = document.createElement('thead');
